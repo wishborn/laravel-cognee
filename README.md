@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/wishborn/laravel-cognee.svg?style=flat-square)](https://packagist.org/packages/wishborn/laravel-cognee)
 [![License](https://img.shields.io/packagist/l/wishborn/laravel-cognee.svg?style=flat-square)](https://packagist.org/packages/wishborn/laravel-cognee)
 
-A Laravel wrapper for the [Cognee PHP SDK](https://github.com/wishborn/php-cognee-sdk) - Transform raw data into persistent AI memory for your Laravel applications.
+A Laravel wrapper for the [Alt PHP Cognee SDK](https://github.com/wishborn/alt-php-cognee-sdk) - Transform raw data into persistent AI memory for your Laravel applications.
 
 ## Requirements
 

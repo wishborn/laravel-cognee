@@ -17,4 +17,4 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Unit tests for config loading and service provider bindings
 
 ### Dependencies
-- Requires `wishborn/php-cognee-sdk` ^0.1 (Cognee v0.5.1 compatible)
+- Requires `wishborn/alt-php-cognee-sdk` ^0.1 (Cognee v0.5.1 compatible)
