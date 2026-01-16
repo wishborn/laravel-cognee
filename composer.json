@@ -1,0 +1,63 @@
+{
+    "name": "glennraya/laravel-cognee",
+    "description": "Laravel wrapper for the Cognee PHP SDK - Transform raw data into persistent AI memory",
+    "keywords": ["laravel", "cognee", "ai", "memory", "knowledge-graph", "sdk"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Glenn Raya",
+            "email": "glenn@example.com"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "illuminate/support": "^11.0|^12.0",
+        "mikewolfxyou/php-cognee-sdk": "dev-main"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^9.0|^10.0",
+        "pestphp/pest": "^3.0",
+        "pestphp/pest-plugin-laravel": "^3.0"
+    },
+    "repositories": [
+        {
+            "type": "path",
+            "url": "../php-cognee-sdk",
+            "options": {
+                "symlink": true
+            }
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "GlennRaya\\Cognee\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GlennRaya\\Cognee\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GlennRaya\\Cognee\\CogneeServiceProvider"
+            ],
+            "aliases": {
+                "Cognee": "GlennRaya\\Cognee\\Facades\\Cognee"
+            }
+        }
+    },
+    "config": {
+        "sort-packages": true,
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
