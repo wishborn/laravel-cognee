@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GlennRaya\Cognee;
+namespace Wishborn\Cognee;
 
 use Cognee\Client;
 use Cognee\Config;

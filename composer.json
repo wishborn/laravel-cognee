@@ -1,12 +1,12 @@
 {
-    "name": "glennraya/laravel-cognee",
+    "name": "wishborn/laravel-cognee",
     "description": "Laravel wrapper for the Cognee PHP SDK - Transform raw data into persistent AI memory",
     "keywords": ["laravel", "cognee", "ai", "memory", "knowledge-graph", "sdk"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Glenn Raya",
-            "email": "glenn@example.com"
+            "name": "Wishborn",
+            "homepage": "https://github.com/wishborn"
         }
     ],
     "require": {
@@ -30,12 +30,12 @@
     ],
     "autoload": {
         "psr-4": {
-            "GlennRaya\\Cognee\\": "src/"
+            "Wishborn\\Cognee\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "GlennRaya\\Cognee\\Tests\\": "tests/"
+            "Wishborn\\Cognee\\Tests\\": "tests/"
         }
     },
     "scripts": {
@@ -45,10 +45,10 @@
     "extra": {
         "laravel": {
             "providers": [
-                "GlennRaya\\Cognee\\CogneeServiceProvider"
+                "Wishborn\\Cognee\\CogneeServiceProvider"
             ],
             "aliases": {
-                "Cognee": "GlennRaya\\Cognee\\Facades\\Cognee"
+                "Cognee": "Wishborn\\Cognee\\Facades\\Cognee"
             }
         }
     },

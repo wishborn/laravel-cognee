@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace GlennRaya\Cognee\Tests;
+namespace Wishborn\Cognee\Tests;
 
-use GlennRaya\Cognee\CogneeServiceProvider;
+use Wishborn\Cognee\CogneeServiceProvider;
 use GlennRaya\Cognee\Facades\Cognee;
 use Orchestra\Testbench\TestCase as Orchestra;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace GlennRaya\Cognee\Facades;
+namespace Wishborn\Cognee\Facades;
 
 use Illuminate\Support\Facades\Facade;
 
@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Facade;
  * @method static \Cognee\Resources\Health health()
  * @method static \Cognee\Client client()
  *
- * @see \GlennRaya\Cognee\CogneeManager
+ * @see \Wishborn\Cognee\CogneeManager
  */
 class Cognee extends Facade
 {

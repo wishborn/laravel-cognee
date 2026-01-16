@@ -1,10 +1,10 @@
 # Laravel Cognee
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/glennraya/laravel-cognee.svg?style=flat-square)](https://packagist.org/packages/glennraya/laravel-cognee)
-[![Total Downloads](https://img.shields.io/packagist/dt/glennraya/laravel-cognee.svg?style=flat-square)](https://packagist.org/packages/glennraya/laravel-cognee)
-[![License](https://img.shields.io/packagist/l/glennraya/laravel-cognee.svg?style=flat-square)](https://packagist.org/packages/glennraya/laravel-cognee)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/wishborn/laravel-cognee.svg?style=flat-square)](https://packagist.org/packages/wishborn/laravel-cognee)
+[![Total Downloads](https://img.shields.io/packagist/dt/wishborn/laravel-cognee.svg?style=flat-square)](https://packagist.org/packages/wishborn/laravel-cognee)
+[![License](https://img.shields.io/packagist/l/wishborn/laravel-cognee.svg?style=flat-square)](https://packagist.org/packages/wishborn/laravel-cognee)
 
-A Laravel wrapper for the [Cognee PHP SDK](https://github.com/mikewolfxyou/php-cognee-sdk) - Transform raw data into persistent AI memory for your Laravel applications.
+A Laravel wrapper for the [Cognee PHP SDK](https://github.com/wishborn/php-cognee-sdk) - Transform raw data into persistent AI memory for your Laravel applications.
 
 ## Requirements
 
@@ -17,7 +17,7 @@ A Laravel wrapper for the [Cognee PHP SDK](https://github.com/mikewolfxyou/php-c
 Install the package via Composer:
 
 ```bash
-composer require glennraya/laravel-cognee
+composer require wishborn/laravel-cognee
 ```
 
 The package will automatically register its service provider and facade.
@@ -48,7 +48,7 @@ COGNEE_RETRY_ATTEMPTS=3
 ### Using the Facade
 
 ```php
-use GlennRaya\Cognee\Facades\Cognee;
+use Wishborn\Cognee\Facades\Cognee;
 
 // Create a dataset
 $dataset = Cognee::datasets()->create('my-dataset');
@@ -67,7 +67,7 @@ Cognee::datasets()->cognify(new CognifyRequest(
 // Search the knowledge graph
 $results = Cognee::search()->search(new SearchRequest(
     query: 'your search query',
-    searchType: SearchType::SEMANTIC,
+    searchType: SearchType::CHUNKS,
     datasetIds: [$dataset->id],
 ));
 ```
@@ -75,7 +75,7 @@ $results = Cognee::search()->search(new SearchRequest(
 ### Using Dependency Injection
 
 ```php
-use GlennRaya\Cognee\CogneeManager;
+use Wishborn\Cognee\CogneeManager;
 
 class MyController extends Controller
 {
@@ -88,7 +88,7 @@ class MyController extends Controller
         $results = $this->cognee->search()->search(
             new SearchRequest(
                 query: $request->input('query'),
-                searchType: SearchType::SEMANTIC,
+                searchType: SearchType::CHUNKS,
             )
         );
 
@@ -152,7 +152,7 @@ If you discover any security-related issues, please email security@example.com i
 
 ## Credits
 
-- [Glenn Raya](https://github.com/glennraya)
+- [Wishborn](https://github.com/wishborn)
 - [All Contributors](../../contributors)
 
 ## License

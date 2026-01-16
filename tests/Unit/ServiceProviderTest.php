@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use GlennRaya\Cognee\CogneeManager;
+use Wishborn\Cognee\CogneeManager;
 
 /**
  * Tests for the CogneeServiceProvider registration.
@@ -23,7 +23,7 @@ it('registers the manager with class binding', function () {
 });
 
 it('can resolve manager via facade', function () {
-    $manager = \GlennRaya\Cognee\Facades\Cognee::getFacadeRoot();
+    $manager = \Wishborn\Cognee\Facades\Cognee::getFacadeRoot();
 
     expect($manager)->toBeInstanceOf(CogneeManager::class);
 });

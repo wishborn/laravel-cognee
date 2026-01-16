@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use GlennRaya\Cognee\Tests\TestCase;
+use Wishborn\Cognee\Tests\TestCase;
 
 /*
 |--------------------------------------------------------------------------
